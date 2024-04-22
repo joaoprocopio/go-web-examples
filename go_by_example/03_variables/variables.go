@@ -4,6 +4,9 @@ import (
 	"fmt"
 )
 
+// em go, variáveis são explicitamente declaradas e
+// usadas pelo compilador para verificar a correção de tipos de chamadas de funções
+
 func main() {
 	// var, declara uma ou mais variáveis
 	// vc pode declara múltiplas variáveis de uma vez
