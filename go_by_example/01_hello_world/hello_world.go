@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-// um programa em go precisa de um package main uma func main, esse é o entrypoint da aplicação
+// a Go application needs a `package main` and a `func main` in order to execute
+// this is the entrypoint of your application
 func main() {
 	// $ go run <filepath>
 	// $ go build <filepath> && ./<binary>
