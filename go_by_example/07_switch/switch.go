@@ -5,14 +5,12 @@ import (
 	"time"
 )
 
-// declarações switch expressam condicionais através de diversos ramos
+// switch statements express conditionals across many branches
 
 func main() {
 	i := 2
-
 	fmt.Println("escreva", i, " como ")
-
-	// aqui está um switch básico
+	// here's a basic switch
 	switch i {
 	case 1:
 		fmt.Println("um")
@@ -22,8 +20,8 @@ func main() {
 		fmt.Println("três")
 	}
 
-	// você pode usar vírgula para separar múltiplas expressões na mesma cláusula case
-	// nesse exemplo também tem a cláusula default, que atribui um valor padrão para casos não cobertos
+	// you can use commas to separate multiple expressions in the same case statement
+	// we use the optional default case in this example too
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("é fim de semana")
@@ -33,8 +31,8 @@ func main() {
 
 	t := time.Now()
 
-	// switch sem uma expressão é uma maneira de expressar lógica if/else.
-	// expressões de caso de switch não precisam ser constantes
+	// switch without an expression is an alternate way to express if/else logic
+	// here we also show how the case expressions can be non-constants
 	switch {
 	case t.Hour() < 12:
 		fmt.Println("é antes de meio dia")
@@ -42,9 +40,9 @@ func main() {
 		fmt.Println("é depois de meio dia")
 	}
 
-	// um switch de tipo pode comparar tipos ao invés de valores
-	// você pode utilizar isto para descobrir o tipo de uma interface
-	// neste exemplo a variável t vai ter o tipo correspondente a sua clausula.
+	// a type switch compares types instead of values
+	// you can use this to discover the type of an interface values
+	// in this example, the variable t will have the type corresponding to its clause
 	whatAmI := func(i interface{}) {
 		switch t := i.(type) {
 		case bool:
