@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	// go tem diversos tipos de valores, incluindo strings, integers, floats, booleans e etc
-	// os básicos são
+	// Go has various value types including strings, integers, floats, booleans, etc
+	// here are some basic types
 
-	// strings, podem ser concatenadas usando o operador de soma (+)
+	// strings, can be concatenated using with the add operator (+)
 	fmt.Println("go" + "lang")
 
 	// integers
@@ -15,7 +15,7 @@ func main() {
 	// floats
 	fmt.Println("7.0/3.0", 7.0/3.0)
 
-	// booleans, e seus operadores
+	// booleans, and their logical operators
 	fmt.Println(true && false) // and
 	fmt.Println(true || false) // or
 	fmt.Println(!true)         // not

@@ -6,6 +6,7 @@ import (
 )
 
 // go suporta constants de character, string, boolean e valores numeric
+// Go supports
 
 // const declara um valor constante
 // constantes podem aparecer em qualquer lugar que a declaração var pode aparecer

@@ -4,35 +4,36 @@ import (
 	"fmt"
 )
 
-// em go, variáveis são explicitamente declaradas e
-// usadas pelo compilador para verificar a correção de tipos de chamadas de funções
+// in Go, variables are explicitly declared and used by the compiler
+// for example, the type declarations of a variable are used to check the type-correctness of function calls
 
 func main() {
-	// var, declara uma ou mais variáveis
-	// vc pode declara múltiplas variáveis de uma vez
-	// go vai inferir o tipo das variáveis inicializadas (importante)
-	// o fato de inferir o valor inicial faz com que a variável abaixo seja uma string válida
+	// var keyword declares 1 or more variables
 	var a = "initial"
 	fmt.Println(a)
 
+	// you can declare multiple variables at once
 	var b, c int = 1, 2
 	fmt.Println(b, c)
 
+	// Go will infer the type of initialized valies (extremely important)
+	// because Go will infer the type of a variable by its initialized value it makes this variable below be valid
 	var d = true
 	fmt.Println(d)
 
-	// variaveis declaradas sem inicialização correspondente, tem seu o valor zero
-	// por exemplo, o valor zero de um int é 0
+	// variables declared without a corresponding initialization are zero-valued
+	// for example, the zero value for an int is 0
 	var e int
 	fmt.Println(e)
 
-	// e também como exemplo, o valor zero de uma string é "", uma string vazia
+	// and as a example to zero-valued variables
+	// the zero value for an string is "" (empty string)
 	var f string
 	fmt.Println(f, len(f))
 
-	// a sintaxe :=, é uma forma abreviada de declarar e inicializar uma variável
-	// por exemplo, esta abreviação é equivalente a: var f string = "apple"
-	// esta sintaxe está disponível somente dentro de funções (importante)
+	// the := syntax is a shorthand for declaring and initializing a variable
+	// for exemple the code below is equivalent to var f string = "apple"
+	// this syntax is only available inside functions (extremely important)
 	g := "apple"
 	fmt.Println(g)
 }
