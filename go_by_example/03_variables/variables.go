@@ -8,7 +8,7 @@ import (
 // for example, the type declarations of a variable are used to check the type-correctness of function calls
 
 func main() {
-	// var keyword declares 1 or more variables
+	// var statement declares 1 or more variables
 	var a = "initial"
 	fmt.Println(a)
 
@@ -16,7 +16,7 @@ func main() {
 	var b, c int = 1, 2
 	fmt.Println(b, c)
 
-	// Go will infer the type of initialized valies (extremely important)
+	// Go will infer the type of initialized valies
 	// because Go will infer the type of a variable by its initialized value it makes this variable below be valid
 	var d = true
 	fmt.Println(d)
@@ -33,7 +33,7 @@ func main() {
 
 	// the := syntax is a shorthand for declaring and initializing a variable
 	// for exemple the code below is equivalent to var f string = "apple"
-	// this syntax is only available inside functions (extremely important)
+	// this syntax is only available inside functions
 	g := "apple"
 	fmt.Println(g)
 }
