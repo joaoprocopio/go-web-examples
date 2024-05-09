@@ -6,7 +6,7 @@ import "fmt"
 // this feature is used often in idiomatic Go
 // for example to return both result and error values from a function
 
-// the (int, int) in this function signature shows that the function returns 2 int's
+// the (int, int) in this function signature shows that the function returns 2 integers
 func vals() (int, int) {
 	return 3, 7
 }

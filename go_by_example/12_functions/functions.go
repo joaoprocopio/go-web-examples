@@ -5,7 +5,7 @@ import "fmt"
 // functions are central in go
 // we'll learn about functions with a few different examples
 
-// here's a function that takes two int's and returns their sum as an int
+// here's a function that takes two integers and returns their sum as an int
 func plus(a int, b int) int {
 	// Go requires explicit, i.e. it won't automatically return the value of the last expression
 	return a + b

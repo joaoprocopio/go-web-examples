@@ -7,9 +7,9 @@ import "fmt"
 // arrays are useful in some specific scenarios
 
 func main() {
-	// here we create an array a that hold exactly 5 int's (integers)
+	// here we create an array a that hold exactly 5 integers
 	// the type of elements are both part of the array's type
-	// by default an array is zero-valued, which for int's means 0's (zeros)
+	// by default an array is zero-valued, which for int's means zeros
 	var a [5]int
 	fmt.Println("emp:", a)
 
