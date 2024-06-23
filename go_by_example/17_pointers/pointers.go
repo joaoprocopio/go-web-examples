@@ -5,8 +5,9 @@ import "fmt"
 // Go supports pointers, allowing you to pass references to values and records within your program
 
 // we'll show how pointers work in contrast to values with 2 functions: zeroval and zeroptr
+
 // zeroval has an int parameter, so arguments will be passed to it by value
-// zeroval will get a copy of ival distinct from the one in the calling function
+// zeroval will get a copy of ival distinct from the one in the calling function“
 func zeroval(ival int) {
 	ival = 0
 }
@@ -29,7 +30,7 @@ func main() {
 	zeroptr(&i)
 	fmt.Println("zeroptr:", i)
 
-	// pointers cna be printed too
+	// pointers can be printed too
 	fmt.Println("pointer:", &i)
 }
 
