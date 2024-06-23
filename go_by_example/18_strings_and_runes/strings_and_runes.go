@@ -53,7 +53,7 @@ func main() {
 
 func examineRune(r rune) {
 	// values enclosed in single quotes are rune literals
-	// we can compare a rune valeu to a rune literal directly
+	// we can compare a rune value to a rune literal directly
 	if r == 't' {
 		fmt.Println("found tee")
 	} else if r == 'ส' {
