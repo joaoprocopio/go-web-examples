@@ -13,10 +13,7 @@ func main() {
 	// send a new value int oa channel using the channel <- syntax
 	// here we send "ping" to the messages channel we made above
 	// from a new goroutine
-	for range 5 {
-
-		go func() { messages <- "ping" }()
-	}
+	go func() { messages <- "ping" }()
 
 	// the <-channel syntax receives a value from the channel
 	// here we'll receive the "ping" message we sent above and print it out
