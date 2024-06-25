@@ -18,6 +18,9 @@ func pong(pings <-chan string, pongs chan<- string) {
 	pongs <- msg
 }
 
+// chan<- type: only accepts sending values    (send-only)
+// <-chan type: only accepts receiving values  (receive-only)
+
 func main() {
 	pings := make(chan string, 1)
 	pongs := make(chan string, 1)
