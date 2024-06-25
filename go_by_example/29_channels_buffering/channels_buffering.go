@@ -14,7 +14,7 @@ func main() {
 	messages := make(chan string, 2)
 
 	// because this channel is buffered
-	// we can sed these values into the channel without
+	// we can send these values into the channel without
 	// a corresponding concurrent receive
 	messages <- "buffered"
 	messages <- "channel"
