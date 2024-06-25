@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 // channels are the pipes that connect concurrent goroutines
@@ -17,7 +16,6 @@ func main() {
 	// here we send "ping" to the messages channel we made above
 	// from a new goroutine
 	go func() {
-		time.Sleep(time.Second * 5)
 		messages <- "ping"
 	}()
 
