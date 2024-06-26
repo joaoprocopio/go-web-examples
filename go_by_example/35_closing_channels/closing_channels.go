@@ -36,4 +36,17 @@ func main() {
 		fmt.Println("sent job", j)
 	}
 	close(jobs)
+	fmt.Println("sent all jobs")
+
+	// we await the worker using the synchronization approach we saw earlier
+	<-done
+
+	// reading from a closed channels succeeds immediately
+	// returning the zero value of the underlying type
+	// the optional second return value is true if the received was delivered by a successful send operation to the channel
+	// or false if it was a zero value generated because the channel is closed and empty
+	_, ok := <-jobs
+	fmt.Println("received more jobs:", ok)
 }
+
+// the idea of closed channels leads naturally to our next example
